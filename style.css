@@ -8,8 +8,13 @@ body {
 }
 
 @font-face {
-    font-family: 'myFont';
+    font-family: 'semiBold';
     src: url('assets/fonts/static/Figtree-semiBold.ttf');
+  }
+
+  @font-face {
+    font-family: 'boldFont';
+    src: url('assets/fonts/static/Figtree-ExtraBold.ttf');
   }
 
 .card {
@@ -38,29 +43,34 @@ body {
     height: 29px;
     background-color: #F4D04E;
     border-radius: 4px;
-    font-family: myFont;
+    font-family: boldFont;
     font-size: 14px;
     padding: 6px 12px 6px 12px;
     box-sizing: border-box;
 }
 
 .date {
-    margin-top: 20px;
-    font-family: myFont;
+    margin-top: 16px;
+    font-family: semiBold;
 }
 
 .title {
-    font-family: myFont;
-    font-weight: bold;
+    font-family: boldFont;
     font-size: 24px;
     margin-top: 20px;
 }
 
+.title:hover {
+    color: #F4D04E;
+    cursor: pointer;
+}
+
 .description {
-    font-family: myFont;
+    font-family: semiBold;
     font-size: 18px;
     color: #6B6B6B;
-    margin-top: 20px;
+    margin-top: 16px;
+    letter-spacing: 0.5px;
 }
 
 .author {
@@ -78,6 +88,6 @@ body {
 }
 
 .authorname {
-    font-family: myFont;
-    padding: 6px 0 6px 15px;
+    font-family: boldFont;
+    padding: 6px 0 6px 12px;
 }
